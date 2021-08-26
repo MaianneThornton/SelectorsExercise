@@ -2,72 +2,128 @@
 body {
   background-color: #CED4D8;
 }
+
 /* Exercise #3 */
 h1 {
   color: #AC6AC7;
 }
+
 /* Exercise #4 */
 h2 {
   color: rgb(255, 165, 0)
 }
+
 /* Exercise #5 */
 li {
   color: blue;
 }
+
 /* Exercise #6 */
 p {
   background-color: gold;
 }
+
 /* Exercise #7 */
 input {
   border: 5px pink dotted;
 }
+  /* - OR -
+  label input {
+    border: 5px pink dotted;
+  } */
+  /* - OR -
+  input[type="text"], input type="email"] {border: 5px pink dotted;} */
+
 /* Exercise #8 */
 .first {
-  color: #fff;
+  background-color: #fff;
 }
+/* OR
+p.first {
+  color: #fff;
+} */
+
 /* Exercise #9 */
 #important {
   border: 3px dashed #0000ff;
 }
+
 /* Exercise #10 */
 div p {
-  font-size: 30px
+  font-size: 30px;
 }
+
+/* OR
+div > p {
+  font-size: 30px;
+} */
+
 /* Exercise #11 */
 input[type="email"]{
   background-color: #808080;
 }
+
 /* Exercise #12 */
 div:nth-of-type(3) p {
   background-color: hotpink;
 }
+/* OR
+div:nth-child(5) p {
+  background-color: hotpink;
+} */
+
 /* Exercise #13 */
-/* Pulled this one off my the sheer luck */
+/* Pulled this one off by the sheer luck */
 div:nth-of-type(3) p:nth-of-type(2) {
 border: 7px solid rgb(255, 255, 255);
 }
+/* OR
+div:nth-child(5) > p:last-child {
+  border: 7px solid rgb(255, 255, 255);
+} */
+
 /* Exercise #14 */
 em {
   color: seashell; font-size: 25px;
 }
+/* OR
+div:nth-of-type(3) p em {
+  font-size: 25px;
+  color: seashell;
+} */
+
 /* Bonus Territory */
-/* Bonus #1 */
-li:not(li:last-child) {
+
+/* Bonus #1
+INCORRECT
+/* li:not(li:last-child) {
   margin-left: 40px;
-}
+} */
+/* CORRECT ANSWER */
+input[type="checkbox"]:checked {
+  margin-left: 40px;
+} 
+/* or
+input:checked {
+  margin-left: 40px;
+} */
+
 /* Bonus #2 */
 label {
   text-transform: lowercase;
 }
+
 /* Bonus #3 */
 #important::first-letter {
   font-size: 90px;
+  color: lime
 }
+
 /* Bonus #4 */
 h1:hover {
   color: navy;
 }
+
 /* Bonus #5 */
 a:visited {
   color: silver;
